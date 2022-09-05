@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Successful</title>
+    <style>
+        body{
+            padding: 50px 50px;
+        }
+        h1{
+            font-size: 30px;
+            position: relative;
+            justify-content: center;
+            justify-self: center;
+            color: blue;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="navbar">
+        <ul class="nav justify-content-center">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="/" >Manufacturer</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/distributorRedirect" >Distributor</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="/wholesalerRedirect" >Wholesaler</a>
+           </li>
+         </ul>
+         </div>  -->
+    <%- include('../partials/navbar.hbs') %>    
+
+    <h1>Transaction Successful</h1>
+    <br><br>
+    <b>Validation Wholesaler Signature:</b> <%- validationWholesaler %><br><br>
+    <b>Invoice Details: </b> <%- wholesalerInvoice %><br><br>
+    <b>Expected Date of Dispatch: </b> <%- wholesalerExpectedDispatch %><br><br>
+    <b>Date Of Dispatch: </b> <%- wholesalerActualDispatch %><br><br>
+    <b>Price: </b> <%- wholesalerPrice %><br><br>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

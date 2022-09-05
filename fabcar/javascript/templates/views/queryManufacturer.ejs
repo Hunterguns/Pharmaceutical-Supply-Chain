@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Result</title>
+    <style>
+        *{
+            background-color: #990000;
+            color: #fff;
+
+        }
+        h1{
+            font-size: 30px;
+            position: relative;
+            justify-content: center;
+            justify-self: center;
+            padding-left: 50px;
+
+        }
+        div{
+            padding-left: 50px;
+            padding-top: 25px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="queryManufDiv">
+        <%- include('../partials/navbar.hbs') %>
+        <h1>Query Result</h1>
+        <br><br>
+        <b>Type: </b> <%- type %><br><br>
+        <b>Order Number: </b> <%- orderNo %><br><br>
+        <b>Manufacturer's Name: </b> <%- manName %><br><br>
+        <b>Manufacturing Date: </b> <%- manDate %><br><br>
+        <b>Invoice Details: </b> <%- manInvoice %><br><br>
+        <b>Expiry Date: </b> <%- expiryDate %><br><br>
+        <b>Expected Date of Dispatch: </b> <%- manExpectedDispatch %><br><br>
+        <b>Date of Dispatch" </b> <%- manActualDispatch %><br><br>
+        <b>Price: </b> <%- manPrice %><br><br>
+        <b>Penalty: </b> <%- manPenalty %><br><br>
+    </div>
+</body>
+</html>

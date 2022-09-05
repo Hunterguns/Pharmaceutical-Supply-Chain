@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", href="css/styles.css">
+    <title>Wholesaler</title>
+</head>
+<body>
+    {{> navbar}}
+    <div class="manufWrapper">
+        <h2>Wholesaler</h2>
+        <form action="/wholesalerSubmit" class="manufForm" name="manufForm" method="POST">
+            <div class="input-box">
+            Wholesalers Validation Signature: <input type="text" id="validationWholesaler" name="validationWholesaler" required>
+            </div>
+
+            <div class="input-box">
+            Invoice Details: <input type="text" id="wholesalerInvoice" name="wholesalerInvoice" required>
+            </div>
+
+            <div class="input-box">
+            Expected Dispatch Date: <input type="text" id="wholesalerExpectedDispatch" name="wholesalerExpectedDispatch" required>
+            </div>
+
+            <div class="input-box">
+            Dispatch Date: <input type="text" id="wholesalerActualDispatch" name="wholesalerActualDispatch" required>
+            </div>
+
+            <div class="input-box">
+            Price: <input type="text" id="wholesalerPrice" name="wholesalerPrice" required>
+            </div>
+
+            <div class="input-box-button">
+            <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
